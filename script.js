@@ -14,25 +14,30 @@ let taxx ;
 let toto ;
 let fixedprod ;
 
+console.log(quantity.innerText);
+
 decr.forEach(num => {
+    
     num.addEventListener("click", () => {
-        --num.nextElementSibling.innerText
+        if (num.nextElementSibling.innerText > 1){
+            --num.nextElementSibling.innerText
 
-        let price = +num.parentElement.previousElementSibling.children[0].children[0].textContent
+            let price = +num.parentElement.previousElementSibling.children[0].children[0].textContent
 
-        fixedprod = +num.parentElement.children[1].textContent * price
+            fixedprod = +num.parentElement.children[1].textContent * price
 
-        productTotalNum = fixedprod.toFixed(2)
+            productTotalNum = fixedprod.toFixed(2)
 
-        num.parentElement.nextElementSibling.nextElementSibling.children[0].textContent = `${productTotalNum}`
+            num.parentElement.nextElementSibling.nextElementSibling.children[0].textContent = `${productTotalNum}`
 
-        sum -= price
+            sum -= price
 
-        subTotal.innerText = sum.toFixed(2)
-        taxx = (sum * 0.18).toFixed(2)
-        tax.innerText = taxx
-        toto = sum + +taxx + 15
-        total.innerText = toto.toFixed(2)
+            subTotal.innerText = sum.toFixed(2)
+            taxx = (sum * 0.18).toFixed(2)
+            tax.innerText = taxx
+            toto = sum + +taxx + 15
+            total.innerText = toto.toFixed(2)
+    }
     })
 })
 
