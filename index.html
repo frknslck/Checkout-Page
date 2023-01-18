@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img class="bg-raiden" src="images/bgraiden.png" alt="raiden bg">
+        <img class="bg-yelan" src="images/bgyelan.png" alt="yelan bg">
+        <h1>Checkout</h1>
+        <div class="product__container">
+            <ul class="productList">
+                <li class="product">
+                    <img src="images/ayaka.jpg" alt="ayaka">
+                    <div class="info">
+                        <h2>Kamisato Ayaka</h2>
+                        <div class="price">
+                            <div class="gold">$<span>35.99</span></div>
+                            <span class="disc">$40.00</span>
+                        </div>
+                        <div class="quantityBar">
+                            <span class="operatorBtn decr">-</span>
+                            <span class="quantityNum">1</span>
+                            <span class="operatorBtn incr">+</span>
+                        </div>
+                        <input type="button" class="remove" value="Remove"></input>
+                        <p class="productTotal">Product Total: $<span class="productTotalNum">35.99</span></p>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="images/kokomi.jpg" alt="kokomi">
+                    <div class="info">
+                        <h2>Sangonomiya Kokomi</h2>
+                        <div class="price">
+                            <div class="gold">$<span>35.99</span></div>
+                            <span class="disc">$40.00</span>
+                        </div>
+                        <div class="quantityBar">
+                            <span class="operatorBtn decr">-</span>
+                            <span class="quantityNum">1</span>
+                            <span class="operatorBtn incr">+</span>
+                        </div>
+                        <input type="button" class="remove" value="Remove"></input>
+                        <p class="productTotal">Product Total: $<span class="productTotalNum">35.99</span></p>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="images/yelan.jpg" alt="yelan">
+                    <div class="info">
+                        <h2>Yelan</h2>
+                        <div class="price">
+                            <div class="gold">$<span>74.99</span></div>
+                            <span class="disc">$94.00</span>
+                        </div>
+                        <div class="quantityBar">
+                            <span class="operatorBtn decr">-</span>
+                            <span class="quantityNum">1</span>
+                            <span class="operatorBtn incr">+</span>
+                        </div>
+                        <input type="button" class="remove" value="Remove"></input>
+                        <p class="productTotal">Product Total: $<span class="productTotalNum">74.99</span></p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="totalList">
+                <li>
+                    <p>Subtotal </p><p>$<span class="subtotal">146.97</span></p>
+                </li>
+                <li>
+                    <p>Tax(18%) </p><p>$<span class="tax">26.45</span></p>
+                </li>
+                <li>
+                    <p>Shipping </p><p class="shipping">$15.00</p>
+                </li>
+                <li>
+                    <p>Total </p><p>$<span class="total">188.42</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

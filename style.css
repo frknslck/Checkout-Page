@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #232631 35%, #d376fd 35% 50%, #1b77ff 50% 65%,#232631 65%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-raiden{
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: scale(2.5);
+    z-index: -1;
+}
+
+.bg-yelan{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    transform: scale(2);
+    z-index: -1;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.product__container{
+    background-color: #efefe7;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 40px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+img{
+    height: 275px;
+    border-radius: 40px;
+}
+
+.product{
+    display: flex;
+    gap: 2rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+}
+
+.gold{
+    color: #e0a56c;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 0.5rem;
+}
+
+.disc{
+    align-self: flex-end;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.quantityBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+    height: 50px;
+    font-size: 1.75rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.operatorBtn{ 
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background-color: #dedede;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.remove{
+    background-color: #bd5a5a;
+    width: 75px;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.productTotal{
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+
+.totalList{
+    width: 90%;
+}
+
+.totalList li{
+    padding-top: 0.1rem;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display{
+    display: none;
+}
