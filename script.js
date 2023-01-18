@@ -76,7 +76,7 @@ remove.forEach(display => {
         taxx = (sum * 0.18).toFixed(2)
         tax.innerText = taxx
 
-        if (sum < 0 || sum == 0) {
+        if (sum < 30 || sum == 0) {
             document.querySelector(".shipping").innerText = "$0.00"
             subTotal.innerText = "0.00"
             tax.innerText = "0.00"
